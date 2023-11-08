@@ -68,7 +68,7 @@ O CRIPS-DM é composto pelos seguintes passos:
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/994bd526-2bd2-4938-bc98-dfce2388a672)
 
 ## H3. Clientes com carros novos podem ter maior interesse em aderir ao seguro de carro.
-***FALSO*** Clientes com carros mais velhos e usados tem maior interesse.
+**FALSO** Clientes com carros mais velhos e usados tem maior interesse.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/84aea930-9456-4d4f-b32a-1cd62e53cf39)
 
@@ -76,7 +76,12 @@ Inicialmente, pode parecer que a condição do carro é o fator determinante par
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/46bf7be0-9e9e-4735-9c90-a19bd18ebb25)
 
+## H4. O valor cobrado pode impactar no interesse do seguro de veículo.
+**VERDADEIRO** Seguros na faixa de 10000 a 20000 tem menos clientes interessados.
 
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/7b487e2a-a7d1-451a-96ba-1fd234b0b58c)
+
+Assim como a hipótese anterior, no início pode parecer que o valor do seguro pode ter uma influência direta no interesse, mas, na realidade, a idade das pessoas é o fator predominante por trás desse comportamento.
 
 # 7. Machine Learning
 - KNN Classifier
