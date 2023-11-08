@@ -69,6 +69,8 @@ O CRIPS-DM é composto pelos seguintes passos:
 - Logistic Regression
 - XGBoost Classifier
 
+**Após uma análise das métricas com Cross-Validation de 5 splits o XGBoost apresentou o melhor desempenho, então escolhi ele para a próxima fase.**
+
 | Models CV            | Precision at k  | Recall at k  | F1-Score at k  |
 |----------------------|------------------|--------------|----------------|
 | XGBoost              | 0.396       | 0.265      | 0.318       |
@@ -76,8 +78,6 @@ O CRIPS-DM é composto pelos seguintes passos:
 | LogisticRegression   | 0.348       | 0.233      | 0.279       |
 | KNN                 | 0.330       | 0.221      | 0.265       |
 
-
-**Após uma análise das métricas com Cross-Validation de 5 splits o XGBoost apresentou o melhor desempenho, então escolhi ele para a próxima fase.**
 
 **Depois de realizar o fine tunning foi testado o algoritmo em cima de dados de teste simulando o ambiente de produção e ele performou da seguinte forma:**
 | Model       | Precision at k  | Recall at k  | F1-Score at k  |
@@ -95,6 +95,11 @@ Assumindo que a empresa esteja disposta a se comunicar com possíveis interessad
 - Lucro ligando para toda a base. R$1.782.302,00
   
 Um lucro 2.07x maior usando o modelo.
+
+## 8.1 Lift Curve
+
+Ao analisar o gráfico, é possível observar que ao entrar em contato com 20% da base de clientes usando o modelo, a empresa alcançará praticamente três vezes mais pessoas.
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/cb687c78-eb56-49bb-8b95-70ab06d9e6a5)
 
 # 9. O produto final do projeto
 WebApp online, hospedado no Streamlit Cloud e integrado com o modelo que está no Render, está disponível para acesso em qualquer dispositivo conectado à internet, possibilitando que qualquer consumidor tenha acesso ao modelo. Você pode acessar o WebApp através do seguinte link: https://rossmann-sales-forecast.streamlit.app/
