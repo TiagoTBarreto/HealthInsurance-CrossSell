@@ -1,8 +1,7 @@
 # Projeto de Cross Sell de uma Seguradora de Saúde
 
 <p align="center">
-  <img src=![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/4d2c6bf1-3072-4255-a173-691636cc13e5)
-" width="100%" height="300">
+  <img src="https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/4d2c6bf1-3072-4255-a173-691636cc13e5" width="100%" height="300">
 </p>
 
 
