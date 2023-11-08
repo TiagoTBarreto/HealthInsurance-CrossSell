@@ -74,7 +74,8 @@ Clientes com carros usados e velhos tem maior interesse.
 
 Inicialmente, pode parecer que a condição do carro é o fator determinante para o interesse, no entanto, na realidade, a idade das pessoas é o principal influenciador por trás desse comportamento.
 
-![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/37855940-47de-43c9-9d15-d291bef44300)
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/46bf7be0-9e9e-4735-9c90-a19bd18ebb25)
+
 
 
 # 7. Machine Learning
