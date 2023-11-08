@@ -57,17 +57,17 @@ O CRIPS-DM é composto pelos seguintes passos:
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/f4cac96f-a228-4e28-b5a2-eb16f29d5a39)
 
 # 6. Top Insights
-## H1. Clientes há mais tempo são mais prováveis de adquirirem o seguro, devido a sua experiência com a empresa. 
+### H1. Clientes há mais tempo são mais prováveis de adquirirem o seguro, devido a sua experiência com a empresa. 
 **FALSO** A longevidade dos clientes na base não interfere na decisão de adquirir o seguro.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/a6097069-5ff4-4251-9830-8bd12a6738e5)
 
-## H2. A idade pode ser um fator diferencial, com clientes mais jovens tendo menos interesse.
+### H2. A idade pode ser um fator diferencial, com clientes mais jovens tendo menos interesse.
 **VERDADEIRO** Clientes com idade entre 35 e 50 são os mais interessados, jovens realmente tem pouco interesse.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/994bd526-2bd2-4938-bc98-dfce2388a672)
 
-## H3. Clientes com carros novos podem ter maior interesse em aderir ao seguro de carro.
+### H3. Clientes com carros novos podem ter maior interesse em aderir ao seguro de carro.
 **FALSO** Clientes com carros mais velhos e usados tem maior interesse.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/84aea930-9456-4d4f-b32a-1cd62e53cf39)
@@ -76,12 +76,23 @@ Inicialmente, pode parecer que a condição do carro é o fator determinante par
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/46bf7be0-9e9e-4735-9c90-a19bd18ebb25)
 
-## H4. O valor cobrado pode impactar no interesse do seguro de veículo.
+### H4. O valor cobrado pode impactar no interesse do seguro de veículo.
 **VERDADEIRO** Seguros na faixa de 10000 a 20000 tem menos clientes interessados.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/7b487e2a-a7d1-451a-96ba-1fd234b0b58c)
 
 Da mesma forma que a hipótese anterior, à primeira vista, pode parecer que o valor do seguro tem uma influência direta no interesse. No entanto, ao analisar os segundo e terceiro gráficos, torna-se evidente que as três faixas etárias com menor interesse são aquelas que têm uma grande quantidade de pessoas com idades entre 20 e 35 anos.
+
+### H5. Clientes que moram em regiões específicas podem ter maior interesse no seguro.
+**VERDADEIRO** Pessoas que moram na região 28 tem maior interesse no seguro.
+
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/bbcd2347-e67c-4d55-ac48-110de27ac001)
+
+## Insights acionáveis:
+Caso o projeto fosse até esse ponto eu recomendaria entrar em contato com clientes:
+- De faixa etária dos 35 aos 50 anos, já que são clientes que tendem a ter maior interesse.
+- Que moram na região 28. 
+
 
 # 7. Machine Learning
 - KNN Classifier
