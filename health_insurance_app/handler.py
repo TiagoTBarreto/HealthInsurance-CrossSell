@@ -2,6 +2,7 @@ import pandas as pd
 from flask import Flask, request, Response
 from healthinsurance.HealthInsurance import HealthInsurance
 import pickle 
+import os
 
 # loading model
 model = pickle.load( open('model/model_health_insurance.pkl', 'rb'))
