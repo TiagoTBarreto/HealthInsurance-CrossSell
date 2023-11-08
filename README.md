@@ -57,10 +57,10 @@ O CRIPS-DM é composto pelos seguintes passos:
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/f4cac96f-a228-4e28-b5a2-eb16f29d5a39)
 
 # 6. Top Insights
-### H1. Clientes há mais tempo são mais prováveis de adquirirem o seguro, devido a sua experiência com a empresa. 
-**FALSO** A longevidade dos clientes na base não interfere na decisão de adquirir o seguro.
+### H1. Clientes que tem histórico de acidentes podem ter maior interesse em adquirir o seguro de veículo. 
+**VERDADEIRO** O fator histórico de acidentes contribui significamente para o interesse do cliente.
 
-![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/a6097069-5ff4-4251-9830-8bd12a6738e5)
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/f5f9b812-1e41-4fdf-88f8-116e93aa5a25)
 
 ### H2. A idade pode ser um fator diferencial, com clientes mais jovens tendo menos interesse.
 **VERDADEIRO** Clientes com idade entre 35 e 50 são os mais interessados, jovens realmente tem pouco interesse.
@@ -89,10 +89,13 @@ Da mesma forma que a hipótese anterior, à primeira vista, pode parecer que o v
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/bbcd2347-e67c-4d55-ac48-110de27ac001)
 
 ## Insights acionáveis:
-Caso o projeto fosse até esse ponto eu recomendaria entrar em contato com clientes:
-- De faixa etária dos 35 aos 50 anos, já que são clientes que tendem a ter maior interesse.
-- Que moram na região 28. 
+Se o projeto chegasse a esse ponto e não envolvesse a parte de machine learning, seria uma recomendação válida entrar em contato com os seguintes grupos de clientes:
+1. Aqueles com faixa etária entre 35 e 50 anos, pois demonstraram maior interesse no seguro.
+2. Clientes que relataram já ter sofrido acidentes, uma vez que essa experiência aumenta a probabilidade de interesse no seguro.
+3. Clientes que residem na região 28.
+4. Observar que a longevidade dos clientes na base não parece ter um impacto significativo no interesse pelo novo seguro.
 
+Essas recomendações podem ajudar a direcionar as estratégias de contato e vendas para maximizar as chances de sucesso.
 
 # 7. Machine Learning
 - KNN Classifier
@@ -100,7 +103,7 @@ Caso o projeto fosse até esse ponto eu recomendaria entrar em contato com clien
 - Logistic Regression
 - XGBoost Classifier
 
-**Após uma análise das métricas com Cross-Validation de 5 splits o XGBoost apresentou o melhor desempenho, então escolhi ele para a próxima fase.**
+**Após uma análise das métricas com Cross-Validation de 5 splits, o XGBoost demonstrou o melhor desempenho. Portanto, optei por prosseguir com esse modelo para a próxima fase do projeto.**
 
 | Models CV            | Precision at k  | Recall at k  | F1-Score at k  |
 |----------------------|------------------|--------------|----------------|
@@ -110,7 +113,7 @@ Caso o projeto fosse até esse ponto eu recomendaria entrar em contato com clien
 | KNN                 | 0.330       | 0.221      | 0.265       |
 
 
-**Depois de realizar o fine tunning foi testado o algoritmo em cima de dados de teste simulando o ambiente de produção e ele performou da seguinte forma:**
+**Após a realização do ajuste fino do modelo, ele foi testado com dados de teste, simulando o ambiente de produção, e apresentou o seguinte desempenho:**
 | Model       | Precision at k  | Recall at k  | F1-Score at k  |
 |-------------|------------------|--------------|----------------|
 | XGBoost     | 0.424         | 0.181     | 0.254       |
