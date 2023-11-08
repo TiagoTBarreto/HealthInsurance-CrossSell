@@ -71,7 +71,7 @@ O CRIPS-DM é composto pelos seguintes passos:
 
 | Models CV            | Precision at k  | Recall at k  | F1-Score at k  |
 |----------------------|------------------|--------------|----------------|
-| XGBoost              | 0.3966       | 0.265      | 0.318       |
+| XGBoost              | 0.396       | 0.265      | 0.318       |
 | Random Forest        | 0.360       | 0.240      | 0.288       |
 | LogisticRegression   | 0.348       | 0.233      | 0.279       |
 | KNN                 | 0.330       | 0.221      | 0.265       |
@@ -93,6 +93,7 @@ O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da
 Assumindo que a empresa esteja disposta a se comunicar com possíveis interessados e que obtenha um lucro bruto de R$ 600,00 para cada cliente que adquira o seguro de veículo. Mas também há um custo de R$ 50,00 cada vez que entrar em contato com um potencial cliente.
 - Lucro ligando até o cliente 33817 (44% da base): R$3.696.372,00
 - Lucro ligando para toda a base. R$1.782.302,00
+  
 Um lucro 2.07x maior usando o modelo.
 
 # 9. O produto final do projeto
