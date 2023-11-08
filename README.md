@@ -69,12 +69,12 @@ O CRIPS-DM é composto pelos seguintes passos:
 - Logistic Regression
 - XGBoost Classifier
 
-| Models CV             | Precision at k  | Recall at k  | F1-Score at k  |
-|-----------------------|------------------|--------------|----------------|
-| XGBoost Classifier              | 0.390         | 0.290     | 0.332       |
-| Random Forest Classifier         | 0.352         | 0.262     | 0.300       |
-| Logistic Regression    | 0.345         | 0.257     | 0.294       |
-| KNN Classifier                  | 0.332         | 0.247     | 0.283       |
+| Models CV            | Precision at k  | Recall at k  | F1-Score at k  |
+|----------------------|------------------|--------------|----------------|
+| XGBoost              | 0.3966       | 0.265      | 0.318       |
+| Random Forest        | 0.360       | 0.240      | 0.288       |
+| LogisticRegression   | 0.348       | 0.233      | 0.279       |
+| KNN                 | 0.330       | 0.221      | 0.265       |
 
 
 **Após uma análise das métricas com Cross-Validation de 5 splits o XGBoost apresentou o melhor desempenho, então escolhi ele para a próxima fase.**
