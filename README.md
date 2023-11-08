@@ -57,18 +57,18 @@ O CRIPS-DM é composto pelos seguintes passos:
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/f4cac96f-a228-4e28-b5a2-eb16f29d5a39)
 
 # 6. Top Insights
-## H1. Clientes há mais tempo são mais prováveis de adquirirem o seguro, devido a sua experiência com a empresa.
-A longevidade dos clientes na base não interfere na decisão de adquirir o seguro.
+## H1. Clientes há mais tempo são mais prováveis de adquirirem o seguro, devido a sua experiência com a empresa. 
+**FALSO** A longevidade dos clientes na base não interfere na decisão de adquirir o seguro.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/a6097069-5ff4-4251-9830-8bd12a6738e5)
 
 ## H2. A idade pode ser um fator diferencial, com clientes mais jovens tendo menos interesse.
-Clientes com idade entre 35 e 50 são os mais interessados, jovens realmente tem pouco interesse.
+**VERDADEIRO** Clientes com idade entre 35 e 50 são os mais interessados, jovens realmente tem pouco interesse.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/994bd526-2bd2-4938-bc98-dfce2388a672)
 
 ## H3. Clientes com carros novos podem ter maior interesse em aderir ao seguro de carro.
-### Clientes com carros usados e velhos tem maior interesse.
+***FALSO*** Clientes com carros mais velhos e usados tem maior interesse.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/84aea930-9456-4d4f-b32a-1cd62e53cf39)
 
