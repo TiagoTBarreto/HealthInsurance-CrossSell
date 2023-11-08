@@ -4,29 +4,22 @@
   <img src="https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/5be72c6e-c4f0-44ce-83c0-ecec156c8c96" width="100%" height="400">
 </p>
 
-
-
-
-A companhia Rossmann foi fundada em 1972 é uma das maiores redes de drogarias da Europa, com cerca de 56.200 funcionários e mais de 4000 lojas espalhadas por diversos países. 
-
 # 1. Problema de Negócio
-O Chief Financial Officer (CFO) da Rossmann deseja reformar as lojas da rede de farmácias, visando melhorar a estrutura e o atendimento ao público. Para isso, ele informou aos gerentes que precisa receber a previsão de receita das próximas 6 semanas de cada loja, a fim de determinar o valor a ser investido em cada uma delas.
+Nosso cliente é uma seguradora que oferece Seguro Saúde aos seus clientes, agora eles precisam da construção de um modelo para prever se os segurados (clientes) do ano passado também terão interesse no Seguro Automóvel oferecido pela empresa.
 
-Atualmente, as previsões são feitas individualmente por cada gerente de loja, resultando em variações significativas devido a fatores distintos que influenciam os resultados, como promoções, competição por clientes, feriados e sazonalidade. O processo de cálculo é manual, o que torna os resultados ainda mais inconsistentes.
-
-O objetivo deste projeto é auxiliar o CFO na tomada de decisões, fornecendo previsões automáticas para cada loja e permitindo que ele consulte essas previsões através de uma aplicação web no Streamlit.
+Construir um modelo para prever se um cliente estaria interessado no seguro automóvel é extremamente útil para a empresa porque ela pode então planejar a sua estratégia de comunicação para chegar a esses clientes e optimizar o seu modelo de negócio e receitas.
 
 # 2. Ferramentas Utilizadas
 
 **Ferramentas para Análise de Dados**
 - Python 3.11.4: A linguagem de programação principal usada para desenvolver o projeto.
-- Ferramentas Estatísticas para Análise dos Dados.
+- Ferramentas Estatísticas para Análise dos Dados (Information Value, Histogramas, Boxplot).
 
 **Biblioteca de Machine Learning e Otimização:**
 - Scikit-learn: Empregado para a preparação de dados, treinamento de modelos, avaliação de desempenho e validação cruzada.
-- Boruta: Utilizado para seleção de recursos.
 - XGBoost: Implementação de algoritmo de aprendizado de máquina Gradient Boosting.
 - Scikit-Optimize com BayesSearchCV: Utilizado para a busca de hiperparâmetros de forma eficiente.
+- ScikitPlot: Utilizada para gerar gráficos informativos no contexto de "Learn to Rank". 
   
 **Desenvolvimento e Controle de Versão:**
 - Git: Ferramenta de versionamento de código para rastrear alterações e colaboração em equipe.
@@ -34,33 +27,29 @@ O objetivo deste projeto é auxiliar o CFO na tomada de decisões, fornecendo pr
 
 **Implantação e Exposição do Modelo:**
 - Flask: Usado para criar uma API RESTful, permitindo a hospedagem do modelo em produção.
-- Streamlit WebApp: Criado para disponibilizar o acesso do modelo a qualquer usuário através da integração com a API do Flask.
 
 **Habilidades e Abordagem:**
 - Pensamento Crítico e Resolução de Problemas: Habilidades fundamentais aplicadas para analisar, solucionar problemas e tomar decisões ao longo do projeto.
-  
-# 3. Premissas assumidas para a análise
-  - Em lojas onde a distância para o competidor mais próximo não estava disponível, foi assumido o valor de 200.000 metros.
-  - Os dias em que as lojas estavam fechadas foram excluídos da análise.
-  - A análise foi realizada apenas nos dias em que o número de vendas foi maior que zero.
-  - A variável "clientes" foi removida da análise, pois não estaria disponível durante a previsão.
 
-# 4. Descrição dos Dados 
-- **Id** - an Id that represents a (Store, Date) duple within the test set
-- **Store** - a unique Id for each store
-- **Sales** - the turnover for any given day (this is what you are predicting)
-- **Customers** - the number of customers on a given day
-- **Open** - an indicator for whether the store was open: 0 = closed, 1 = open
-- **StateHoliday** - indicates a state holiday. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends. a = public holiday, b = Easter holiday, c = Christmas, 0 = None
-- **SchoolHoliday** - indicates if the (Store, Date) was affected by the closure of public schools
-- **StoreType** - differentiates between 4 different store models: a, b, c, d
-- **Assortment** - describes an assortment level: a = basic, b = extra, c = extended
-- **CompetitionDistance** - distance in meters to the nearest competitor store
-- **CompetitionOpenSince[Month/Year]** - gives the approximate year and month of the time the nearest competitor was opened
-- **Promo** - indicates whether a store is running a promo on that day
-- **Promo2** - Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating
-- **Promo2Since[Year/Week]** - describes the year and calendar week when the store started participating in Promo2
-- **PromoInterval** - describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
+# 3. Descrição dos Dados 
+| Campo                       | Descrição                                                                                      |
+|-----------------------------|-------------------------------------------------------------------------------------------------|
+| Id                          | Um ID que representa um par (Loja, Data) no conjunto de teste.                                  |
+| Store                       | Um ID exclusivo para cada loja.                                                                |
+| Sales                       | O faturamento para um determinado dia (o que você está prevendo).                                |
+| Customers                   | O número de clientes em um determinado dia.                                                  |
+| Open                        | Um indicador de se a loja estava aberta: 0 = fechada, 1 = aberta.                                  |
+| StateHoliday                | Indica um feriado estadual. Normalmente, todas as lojas, com poucas exceções, estão fechadas em feriados estaduais. Observe que todas as escolas estão fechadas em feriados públicos e fins de semana. a = feriado público, b = feriado de Páscoa, c = Natal, 0 = Nenhum. |
+| SchoolHoliday               | Indica se o (Loja, Data) foi afetado pelo fechamento das escolas públicas.                       |
+| StoreType                   | Diferencia entre 4 modelos diferentes de loja: a, b, c, d.                                       |
+| Assortment                  | Descreve um nível de sortimento: a = básico, b = extra, c = estendido.                              |
+| CompetitionDistance         | Distância em metros para a loja concorrente mais próxima.                                       |
+| CompetitionOpenSince[Month/Year] | Dá o ano e mês aproximados em que o concorrente mais próximo foi aberto.                        |
+| Promo                       | Indica se uma loja está executando uma promoção naquele dia.                                     |
+| Promo2                      | Promo2 é uma promoção contínua e consecutiva para algumas lojas: 0 = loja não está participando, 1 = loja está participando.                                       |
+| Promo2Since[Year/Week]      | Descreve o ano e a semana do calendário em que a loja começou a participar da Promo2.             |
+| PromoInterval               | Descreve os intervalos consecutivos em que a Promo2 é iniciada, nomeando os meses em que a promoção é reiniciada. Por exemplo, "Fev, Mai, Ago, Nov" significa que cada rodada começa em fevereiro, maio, agosto, novembro de qualquer ano para essa loja.             |
+
   
 # 5. Descrição da solução
 Foi empregado o método de gerenciamento CRIPS-DM, que tem como objetivo o desenvolvimento de projetos de Data Science de forma cíclica. Esse método é abrangente e, ao concluir um ciclo, você obterá:
