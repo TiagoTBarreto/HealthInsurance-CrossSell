@@ -125,11 +125,11 @@ O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/7ed17bc2-fddc-463e-9e5a-fe942bf043fc)
 
-Assumindo que a empresa esteja disposta a se comunicar com possíveis interessados e que obtenha um lucro bruto de R$ 600,00 para cada cliente que adquira o seguro de veículo. Mas também há um custo de R$ 50,00 cada vez que entrar em contato com um potencial cliente.
-- Lucro ligando até o cliente 33817 (44% da base): R$3.696.372,00
-- Lucro ligando para toda a base. R$1.782.302,00
+Considerando que a empresa esteja disposta a se comunicar com possíveis interessados e obtenha um lucro bruto de R$ 600,00 para cada cliente que adquira o seguro de veículo, mas também incorra um custo de R$ 50,00 a cada vez que entra em contato com um potencial cliente, observamos o seguinte:
+- Lucro ao entrar em contato com os primeiros 33.817 clientes (44% da base): R$3.696.372,00
+- Lucro ao entrar em contato com toda a base de clientes: R$1.782.302,00
   
-Um lucro 2.07x maior usando o modelo.
+Isso representa um lucro 2.07x maior ao usar o modelo, o que indica que a abordagem do modelo é mais eficaz em maximizar os lucros em comparação com entrar em contato com todos os clientes sem a orientação do modelo.
 
 ## 8.1 Lift Curve
 
