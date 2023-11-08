@@ -56,12 +56,17 @@ Foi empregado o método de gerenciamento CRIPS-DM, que tem como objetivo o desen
 O CRIPS-DM é composto pelos seguintes passos: 
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/f4cac96f-a228-4e28-b5a2-eb16f29d5a39)
 
-# 6. Top 2 Insights
-## 1.0 Lojas com mais promoções consecutivas vendem em média menos.
-![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/6cd3c587-2132-466c-b232-48e6c2c0c533)
+# 6. Top Insights
+## 1.0 Clientes há mais tempo são mais prováveis de adquirirem o seguro, devido a sua experiência com a empresa.
+A longevidade dos clientes na base não interfere na decisão de adquirir o seguro.
 
-## 2.0 Lojas com competidores mais próximos vendem em média mais.
-![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/af62eb8f-6d2e-43d9-ac95-004e6a97154e)
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/a6097069-5ff4-4251-9830-8bd12a6738e5)
+
+## 2.0 A idade pode ser um fator diferencial, com clientes mais jovens tendo menos interesse.
+Clientes com idade entre 35 e 50 são os mais interessados, jovens realmente tem pouco interesse.
+
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/994bd526-2bd2-4938-bc98-dfce2388a672)
+
 
 # 7. Machine Learning
 - KNN Classifier
@@ -99,6 +104,7 @@ Um lucro 2.07x maior usando o modelo.
 ## 8.1 Lift Curve
 
 Ao analisar o gráfico, é possível observar que ao entrar em contato com 20% da base de clientes usando o modelo, a empresa alcançará praticamente três vezes mais pessoas.
+
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/cb687c78-eb56-49bb-8b95-70ab06d9e6a5)
 
 # 9. O produto final do projeto
