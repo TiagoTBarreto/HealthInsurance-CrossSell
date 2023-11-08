@@ -67,6 +67,15 @@ Clientes com idade entre 35 e 50 são os mais interessados, jovens realmente tem
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/994bd526-2bd2-4938-bc98-dfce2388a672)
 
+## 3.0 Clientes com carros novos podem ter maior interesse em aderir ao seguro de carro.
+Clientes com carros usados e velhos tem maior interesse.
+
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/84aea930-9456-4d4f-b32a-1cd62e53cf39)
+
+Inicialmente, pode parecer que a condição do carro é o fator determinante para o interesse, no entanto, na realidade, a idade das pessoas é o principal influenciador por trás desse comportamento.
+
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/37855940-47de-43c9-9d15-d291bef44300)
+
 
 # 7. Machine Learning
 - KNN Classifier
