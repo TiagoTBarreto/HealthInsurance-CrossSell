@@ -79,6 +79,11 @@ O CRIPS-DM é composto pelos seguintes passos:
 
 **Após uma análise das métricas com Cross-Validation de 5 splits o XGBoost apresentou o melhor desempenho, então escolhi ele para a próxima fase.**
 
+**Depois de realizar o fine tunning foi testado o algoritmo em cima de dados de teste simulando o ambiente de produção e ele performou da seguinte forma:**
+| Model       | Precision at k  | Recall at k  | F1-Score at k  |
+|-------------|------------------|--------------|----------------|
+| XGBoost     | 0.412917         | 0.221045     | 0.287945       |
+
 # 8. Tradução do modelo de Machine Learning
 O modelo previu vendas de R$ 282 milhões para as próximas 6 semanas. Devido ao seu erro médio de 10%, ele pode, na pior das hipóteses, subestimar o valor em 10% ou superestimar em 10%, como pode ser observado no dataframe a seguir, que apresenta o número de vendas previsto, o melhor cenário e o pior cenário.
 
