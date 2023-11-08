@@ -4,7 +4,7 @@ from healthinsurance.HealthInsurance import HealthInsurance
 import pickle 
 
 # loading model
-model = pickle.load( open('/home/tiagobarreto/DS/repos/health-insurance1/model/model_health_insurance.pkl', 'rb'))
+model = pickle.load( open('model/model_health_insurance.pkl', 'rb'))
 
 app = Flask(__name__)
 
@@ -43,4 +43,5 @@ def health_insurance_predict():
         return Response('{}', status = 200, mimetype='application/json' )
     
 if __name__ == '__main__':
-    app.run( '0.0.0.0', debug = True )
+    port = os.environ.get('PORT', 5000)
+    app.run( '0.0.0.0', port = port, debug = True )
