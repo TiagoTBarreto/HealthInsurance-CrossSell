@@ -86,9 +86,14 @@ O CRIPS-DM é composto pelos seguintes passos:
 
 
 # 8. Tradução do modelo de Machine Learning
-O modelo previu vendas de R$ 282 milhões para as próximas 6 semanas. Devido ao seu erro médio de 10%, ele pode, na pior das hipóteses, subestimar o valor em 10% ou superestimar em 10%, como pode ser observado no dataframe a seguir, que apresenta o número de vendas previsto, o melhor cenário e o pior cenário.
+O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da lista, a probabilidade de eles adquirirem o seguro é alta, resultando em lucros consideráveis. No entanto, à medida que a lista é explorada mais profundamente, a propensão a adquirir o seguro diminui, o que leva a uma redução na margem de lucro devido ao custo de contato.
 
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/75cb0041-fb29-4244-911e-255b4b2799ce)
+
+Assumindo que a empresa esteja disposta a se comunicar com possíveis interessados e que obtenha um lucro bruto de R$ 600,00 para cada cliente que adquira o seguro de veículo. Mas também há um custo de R$ 50,00 cada vez que entrar em contato com um potencial cliente.
+- Lucro ligando até o cliente 33817 (44% da base): R$3.696.372,00
+- Lucro ligando para toda a base. R$1.782.302,00
+Um lucro 2.07x maior usando o modelo.
 
 # 9. O produto final do projeto
 WebApp online, hospedado no Streamlit Cloud e integrado com o modelo que está no Render, está disponível para acesso em qualquer dispositivo conectado à internet, possibilitando que qualquer consumidor tenha acesso ao modelo. Você pode acessar o WebApp através do seguinte link: https://rossmann-sales-forecast.streamlit.app/
