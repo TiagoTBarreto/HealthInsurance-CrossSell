@@ -3,13 +3,13 @@ import inflection
 
 class HealthInsurance (object):
     def __init__(self):
-        self.mms_vintage = pickle.load(open('/home/tiagobarreto/DS/repos/health-insurance1/parameter/mms_vintage.pkl', 'rb'))
-        self.mms_age = pickle.load(open('/home/tiagobarreto/DS/repos/health-insurance1/parameter/mms_age.pkl', 'rb'))
-        self.ss = pickle.load(open('/home/tiagobarreto/DS/repos/health-insurance1/parameter/ss.pkl', 'rb'))
-        self.frequency_gender = pickle.load(open('/home/tiagobarreto/DS/repos/health-insurance1/parameter/frequency_gender.pkl', 'rb'))
-        self.target_encode_policy_sales = pickle.load(open('/home/tiagobarreto/DS/repos/health-insurance1/parameter/target_encode_policy_sales.pkl', 'rb'))
-        self.target_encode_region_code = pickle.load(open('/home/tiagobarreto/DS/repos/health-insurance1/parameter/target_encode_region_code.pkl', 'rb'))
-        self.target_encode_vehicle_age = pickle.load(open('/home/tiagobarreto/DS/repos/health-insurance1/parameter/target_encode_vehicle_age.pkl', 'rb'))
+        self.mms_vintage = pickle.load(open('features/mms_vintage.pkl', 'rb'))
+        self.mms_age = pickle.load(open('features/mms_age.pkl', 'rb'))
+        self.ss = pickle.load(open('features/ss.pkl', 'rb'))
+        self.frequency_gender = pickle.load(open('features/frequency_gender.pkl', 'rb'))
+        self.target_encode_policy_sales = pickle.load(open('features/target_encode_policy_sales.pkl', 'rb'))
+        self.target_encode_region_code = pickle.load(open('features/target_encode_region_code.pkl', 'rb'))
+        self.target_encode_vehicle_age = pickle.load(open('features/target_encode_vehicle_age.pkl', 'rb'))
     
     def data_cleaning(self, df1):
         # rename columns
