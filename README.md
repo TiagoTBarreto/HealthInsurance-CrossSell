@@ -71,16 +71,13 @@ O CRIPS-DM é composto pelos seguintes passos:
 
 | Models CV             | Precision at k  | Recall at k  | F1-Score at k  |
 |-----------------------|------------------|--------------|----------------|
-| XGBoost Classifier              | 0.3903         | 0.290     | 0.332       |
+| XGBoost Classifier              | 0.390         | 0.290     | 0.332       |
 | Random Forest Classifier         | 0.352         | 0.262     | 0.300       |
 | Logistic Regression    | 0.345         | 0.257     | 0.294       |
 | KNN Classifier                  | 0.332         | 0.247     | 0.283       |
 
 
-**Após uma análise das métricas com Cross-Validation de 5 splits o XGBoost apresentou o melhor desempenho, mas optei pelo XGBoost para a próxima fase pelos seguintes motivos:** 
-- Requer significativamente menos armazenamento.
-- Apresenta um processamento consideravelmente mais rápido
-- Oferece economia em termos de custos computacionais.
+**Após uma análise das métricas com Cross-Validation de 5 splits o XGBoost apresentou o melhor desempenho, então escolhi ele para a próxima fase.**
 
 # 8. Tradução do modelo de Machine Learning
 O modelo previu vendas de R$ 282 milhões para as próximas 6 semanas. Devido ao seu erro médio de 10%, ele pode, na pior das hipóteses, subestimar o valor em 10% ou superestimar em 10%, como pode ser observado no dataframe a seguir, que apresenta o número de vendas previsto, o melhor cenário e o pior cenário.
