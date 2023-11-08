@@ -81,7 +81,7 @@ Inicialmente, pode parecer que a condição do carro é o fator determinante par
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/7b487e2a-a7d1-451a-96ba-1fd234b0b58c)
 
-Assim como a hipótese anterior, no início pode parecer que o valor do seguro pode ter uma influência direta no interesse, mas, na realidade, a idade das pessoas é o fator predominante por trás desse comportamento.
+Da mesma forma que a hipótese anterior, à primeira vista, pode parecer que o valor do seguro tem uma influência direta no interesse. No entanto, ao analisar os segundo e terceiro gráficos, torna-se evidente que as três faixas etárias com menor interesse são aquelas que têm uma grande quantidade de pessoas com idades entre 20 e 35 anos.
 
 # 7. Machine Learning
 - KNN Classifier
