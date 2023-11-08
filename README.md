@@ -32,25 +32,22 @@ Construir um modelo para prever se um cliente estaria interessado no seguro auto
 - Pensamento Crítico e Resolução de Problemas: Habilidades fundamentais aplicadas para analisar, solucionar problemas e tomar decisões ao longo do projeto.
 
 # 3. Descrição dos Dados 
-| Campo                       | Descrição                                                                                      |
-|-----------------------------|-------------------------------------------------------------------------------------------------|
-| Id                          | Um ID que representa um par (Loja, Data) no conjunto de teste.                                  |
-| Store                       | Um ID exclusivo para cada loja.                                                                |
-| Sales                       | O faturamento para um determinado dia (o que você está prevendo).                                |
-| Customers                   | O número de clientes em um determinado dia.                                                  |
-| Open                        | Um indicador de se a loja estava aberta: 0 = fechada, 1 = aberta.                                  |
-| StateHoliday                | Indica um feriado estadual. Normalmente, todas as lojas, com poucas exceções, estão fechadas em feriados estaduais. Observe que todas as escolas estão fechadas em feriados públicos e fins de semana. a = feriado público, b = feriado de Páscoa, c = Natal, 0 = Nenhum. |
-| SchoolHoliday               | Indica se o (Loja, Data) foi afetado pelo fechamento das escolas públicas.                       |
-| StoreType                   | Diferencia entre 4 modelos diferentes de loja: a, b, c, d.                                       |
-| Assortment                  | Descreve um nível de sortimento: a = básico, b = extra, c = estendido.                              |
-| CompetitionDistance         | Distância em metros para a loja concorrente mais próxima.                                       |
-| CompetitionOpenSince[Month/Year] | Dá o ano e mês aproximados em que o concorrente mais próximo foi aberto.                        |
-| Promo                       | Indica se uma loja está executando uma promoção naquele dia.                                     |
-| Promo2                      | Promo2 é uma promoção contínua e consecutiva para algumas lojas: 0 = loja não está participando, 1 = loja está participando.                                       |
-| Promo2Since[Year/Week]      | Descreve o ano e a semana do calendário em que a loja começou a participar da Promo2.             |
-| PromoInterval               | Descreve os intervalos consecutivos em que a Promo2 é iniciada, nomeando os meses em que a promoção é reiniciada. Por exemplo, "Fev, Mai, Ago, Nov" significa que cada rodada começa em fevereiro, maio, agosto, novembro de qualquer ano para essa loja.             |
-
-  
+| Campo                  | Descrição                                                                           |
+|------------------------|-------------------------------------------------------------------------------------|
+| ID                     | Identificador único do cliente.                                                   |
+| Gênero                 | Gênero do cliente.                                                                 |
+| Idade                  | Idade do cliente.                                                                  |
+| Carteira de Motorista  | 0: O cliente não possui CNH, 1: O cliente já possui CNH.                             |
+| Código de Região       | Código único para a região do cliente.                                            |
+| Já Segurado Antes      | 1: O cliente já possui Seguro de Veículo, 0: O cliente não possui Seguro de Veículo. |
+| Idade do Veículo       | Idade do veículo.                                                                  |
+| Danos no Veículo       | 1: O cliente teve seu veículo danificado no passado, 0: O cliente não teve seu veículo danificado no passado. |
+| Prêmio Anual           | O valor que o cliente precisa pagar como prêmio durante o ano.                    |
+| Canal de Vendas da Apólice | Código anonimizado para o canal de contato com o cliente, ou seja, diferentes agentes, por correio, por telefone, pessoalmente, etc. |
+| Tempo de Associação    | Número de dias que o cliente está associado à empresa.                            |
+| Resposta               | 1: O cliente está interessado, 0: O cliente não está interessado.                   |
+   |
+ 
 # 5. Descrição da solução
 Foi empregado o método de gerenciamento CRIPS-DM, que tem como objetivo o desenvolvimento de projetos de Data Science de forma cíclica. Esse método é abrangente e, ao concluir um ciclo, você obterá:
 - Uma versão completa da solução.
