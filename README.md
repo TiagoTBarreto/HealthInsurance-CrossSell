@@ -46,7 +46,6 @@ Construir um modelo para prever se um cliente estaria interessado no seguro auto
 | Canal de Vendas da Apólice | Código anonimizado para o canal de contato com o cliente, ou seja, diferentes agentes, por correio, por telefone, pessoalmente, etc. |
 | Tempo de Associação    | Número de dias que o cliente está associado à empresa.                            |
 | Resposta               | 1: O cliente está interessado, 0: O cliente não está interessado.                   |
-   |
  
 # 5. Descrição da solução
 Foi empregado o método de gerenciamento CRIPS-DM, que tem como objetivo o desenvolvimento de projetos de Data Science de forma cíclica. Esse método é abrangente e, ao concluir um ciclo, você obterá:
@@ -65,11 +64,10 @@ O CRIPS-DM é composto pelos seguintes passos:
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/af62eb8f-6d2e-43d9-ac95-004e6a97154e)
 
 # 7. Machine Learning
-- Average Model
-- Linear Regression
-- Linear Regression Regularized
-- Random Forest Regressor
-- XGBoost Regressor
+- KNN Classifier
+- Random Forest Classifier
+- Logistic Regression
+- XGBoost Classifier
 
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/b5b0fe72-2045-407c-a875-ddad43dc766d)
 
