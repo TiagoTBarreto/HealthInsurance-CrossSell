@@ -79,9 +79,10 @@ Inicialmente, pode parecer que a condição do carro é o fator determinante par
 ### H4. O valor cobrado pode impactar no interesse do seguro de veículo.
 **VERDADEIRO** Seguros na faixa de 10000 a 20000 tem menos clientes interessados.
 
+Da mesma forma que a hipótese anterior, à primeira vista, pode parecer que o valor do seguro tem uma influência direta no interesse. No entanto, ao analisar os segundo e terceiro gráficos, torna-se evidente que as três faixas etárias com menor interesse são aquelas que têm uma grande quantidade de pessoas com idades entre 20 e 35 anos.
+
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/7b487e2a-a7d1-451a-96ba-1fd234b0b58c)
 
-Da mesma forma que a hipótese anterior, à primeira vista, pode parecer que o valor do seguro tem uma influência direta no interesse. No entanto, ao analisar os segundo e terceiro gráficos, torna-se evidente que as três faixas etárias com menor interesse são aquelas que têm uma grande quantidade de pessoas com idades entre 20 e 35 anos.
 
 ### H5. Clientes que moram em regiões específicas podem ter maior interesse no seguro.
 **VERDADEIRO** Pessoas que moram na região 28 tem maior interesse no seguro.
