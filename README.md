@@ -87,7 +87,8 @@ Da mesma forma que a hipótese anterior, à primeira vista, pode parecer que o v
 ### H5. Clientes que moram em regiões específicas podem ter maior interesse no seguro.
 **VERDADEIRO** Pessoas que moram na região 28 tem maior interesse no seguro.
 
-![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/bbcd2347-e67c-4d55-ac48-110de27ac001)
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/5fe01c43-c5a1-4530-af17-224c160bcb10)
+
 
 ## Insights acionáveis:
 Se o projeto chegasse a esse ponto e não envolvesse a parte de machine learning, seria uma recomendação válida entrar em contato com os seguintes grupos de clientes:
