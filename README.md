@@ -109,10 +109,10 @@ Essas recomendações podem ajudar a direcionar as estratégias de contato e ven
 
 | Models CV            | Precision at k  | Recall at k  | F1-Score at k  |
 |----------------------|------------------|--------------|----------------|
-| XGBoost              | 0.365       | 0.489      | 0.418       |
-| Random Forest        | 0.341       | 0.457      | 0.391       |
-| LogisticRegression   | 0.335       | 0.448      | 0.384       |
-| KNN                 | 0.313       | 0.419      | 0.358       |
+| XGBoost              | 0.370       | 0.453      | 0.407       |
+| LogisticRegression   | 0.343       | 0.420      | 0.378       |
+| Random Forest        | 0.340       | 0.416      | 0.374       |
+| KNN                 | 0.317       | 0.389      | 0.349       |
 
 
 **Após ajustar o modelo, foi realizado um teste simulando o ambiente de produção. Os resultados foram os seguintes:**
