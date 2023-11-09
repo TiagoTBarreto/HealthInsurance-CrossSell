@@ -105,7 +105,7 @@ Essas recomendações podem ajudar a direcionar as estratégias de contato e ven
 - Logistic Regression
 - XGBoost Classifier
 
-**Após uma análise detalhada das métricas utilizando Cross-Validation com 5 splits, o XGBoost destacou-se como o modelo com o melhor desempenho. Diante dessa constatação, optei por avançar para a próxima fase do projeto utilizando este modelo. O valor de K=10.000 utilizado na validação representa aproximadamente 16% do dataset total.**
+**Após uma análise detalhada das métricas utilizando Cross-Validation com 5 splits, o XGBoost destacou-se como o modelo com o melhor desempenho. Diante dessa constatação, optei por avançar para a próxima fase do projeto utilizando este modelo. O valor de K=10.000 utilizado na validação representa 15% do dataset total.**
 
 | Models CV            | Precision at k  | Recall at k  | F1-Score at k  |
 |----------------------|------------------|--------------|----------------|
@@ -118,9 +118,9 @@ Essas recomendações podem ajudar a direcionar as estratégias de contato e ven
 **Após ajustar o modelo, foi realizado um teste simulando o ambiente de produção. Os resultados foram os seguintes:**
 | Model       | Precision at k  | Recall at k  | F1-Score at k  |
 |-------------|------------------|--------------|----------------|
-| XGBoost     | 0.370         | 0.4834     | 0.4192       |
+| XGBoost     | 0.374         | 0.458     | 0.412      |
 
-**O valor de K utilizado foi de 12.200, correspondendo a cerca de 16% do dataset de teste. Observa-se que o modelo apresentou um bom poder de generalização, indicando que não ocorreu overfitting.**
+**O valor de K utilizado foi de 11.430, correspondendo a 15% do dataset de teste. Observa-se que o modelo apresentou um bom poder de generalização, indicando que não ocorreu overfitting.**
 
 # 7. Tradução do modelo de Machine Learning
 O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da lista, a probabilidade de eles adquirirem o seguro é alta, resultando em lucros consideráveis. No entanto, à medida que a lista é explorada mais profundamente, a propensão a adquirir o seguro diminui, o que leva a uma redução na margem de lucro devido ao custo de contato.
