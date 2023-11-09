@@ -1,4 +1,4 @@
-# Optimizando Estratégias de Cross Sell: Um Projeto de Inovação para uma Seguradora de Saúde
+# Projeto de Cross Sell de Seguro de Saúde
 
 <p align="center">
   <img src="https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/5be72c6e-c4f0-44ce-83c0-ecec156c8c96" width="100%" height="400">
