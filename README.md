@@ -13,7 +13,7 @@ Construir um modelo para prever se um cliente estaria interessado no seguro auto
 
 **Ferramentas para Análise de Dados**
 - Python 3.11.4: A linguagem de programação principal usada para desenvolver o projeto.
-- Ferramentas Estatísticas para Análise dos Dados (Information Value, Histogramas, Boxplot).
+- Estatística.
 
 **Biblioteca de Machine Learning e Otimização:**
 - Scikit-learn: Empregado para a preparação de dados, treinamento de modelos, avaliação de desempenho e validação cruzada.
