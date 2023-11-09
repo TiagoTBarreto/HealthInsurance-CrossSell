@@ -140,7 +140,8 @@ Ao analisar o gráfico, é possível observar que ao entrar em contato com 20% d
 # 8. O produto final do projeto
 WebApp online, hospedado no Streamlit Cloud e integrado com o modelo que está no Render, está disponível para acesso em qualquer dispositivo conectado à internet, possibilitando que qualquer consumidor tenha acesso ao modelo. Você pode acessar o WebApp através do seguinte link: https://rossmann-sales-forecast.streamlit.app/
 
-![20231109_104923](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/9ab6e02e-737f-4ca8-8c23-8ad973538d57)
+![Animação](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/246de1c3-a38c-4919-894b-2fbcb5361c25)
+
 
 
 **A imagem acima é do WebApp, como pode se observar na barra lateral tem 3 filtros:**
