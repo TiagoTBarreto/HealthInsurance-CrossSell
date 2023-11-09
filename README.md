@@ -140,7 +140,8 @@ Ao analisar o gráfico, é possível observar que ao entrar em contato com 20% d
 # 9. O produto final do projeto
 WebApp online, hospedado no Streamlit Cloud e integrado com o modelo que está no Render, está disponível para acesso em qualquer dispositivo conectado à internet, possibilitando que qualquer consumidor tenha acesso ao modelo. Você pode acessar o WebApp através do seguinte link: https://rossmann-sales-forecast.streamlit.app/
 
-![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/c8540192-01d1-41df-9b1a-1bef31cba492)
+![Animação](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/2aba5ee1-4e2a-4efb-94fc-0fa830f67d34)
+
 **A imagem acima é do WebApp, como pode se observar na barra lateral tem 3 filtros:**
 - ID Store: Este filtro controla o número das lojas para as quais a previsão será realizada.
 - Sales: Este filtro estabelece um limite de vendas para as lojas que serão exibidas posteriormente no dataframe.
