@@ -119,6 +119,7 @@ Essas recomendações podem ajudar a direcionar as estratégias de contato e ven
 | Model       | Precision at k  | Recall at k  | F1-Score at k  |
 |-------------|------------------|--------------|----------------|
 | XGBoost     | 0.370         | 0.4834     | 0.4192       |
+
 **O valor de K utilizado foi de 12.200, correspondendo a cerca de 16% do dataset de teste. Observa-se que o modelo apresentou um bom poder de generalização, indicando que não ocorreu overfitting.**
 
 # 7. Tradução do modelo de Machine Learning
