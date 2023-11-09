@@ -105,21 +105,21 @@ Essas recomendações podem ajudar a direcionar as estratégias de contato e ven
 - Logistic Regression
 - XGBoost Classifier
 
-**Após uma análise das métricas com Cross-Validation de 5 splits, o XGBoost demonstrou o melhor desempenho. Portanto, optei por prosseguir com esse modelo para a próxima fase do projeto.**
+**Após uma análise detalhada das métricas utilizando Cross-Validation com 5 splits, o XGBoost destacou-se como o modelo com o melhor desempenho. Diante dessa constatação, optei por avançar para a próxima fase do projeto utilizando este modelo. O valor de K=10.000 utilizado na validação representa aproximadamente 16% do dataset total.**
 
 | Models CV            | Precision at k  | Recall at k  | F1-Score at k  |
 |----------------------|------------------|--------------|----------------|
-| XGBoost              | 0.396       | 0.265      | 0.318       |
-| Random Forest        | 0.360       | 0.240      | 0.288       |
-| LogisticRegression   | 0.348       | 0.233      | 0.279       |
-| KNN                 | 0.330       | 0.221      | 0.265       |
+| XGBoost              | 0.365       | 0.489      | 0.418       |
+| Random Forest        | 0.341       | 0.457      | 0.391       |
+| LogisticRegression   | 0.335       | 0.448      | 0.384       |
+| KNN                 | 0.313       | 0.419      | 0.358       |
 
 
-**Após a realização do ajuste fino do modelo, ele foi testado com dados de teste, simulando o ambiente de produção, e apresentou o seguinte desempenho:**
+**Após ajustar o modelo, foi realizado um teste simulando o ambiente de produção. Os resultados foram os seguintes:**
 | Model       | Precision at k  | Recall at k  | F1-Score at k  |
 |-------------|------------------|--------------|----------------|
-| XGBoost     | 0.424         | 0.181     | 0.254       |
-
+| XGBoost     | 0.370         | 0.4834     | 0.4192       |
+**O valor de K utilizado foi de 12.200, correspondendo a cerca de 16% do dataset de teste. Observa-se que o modelo apresentou um bom poder de generalização, indicando que não ocorreu overfitting.**
 
 # 7. Tradução do modelo de Machine Learning
 O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da lista, a probabilidade de eles adquirirem o seguro é alta, resultando em lucros consideráveis. No entanto, à medida que a lista é explorada mais profundamente, a propensão a adquirir o seguro diminui, o que leva a uma redução na margem de lucro devido ao custo de contato.
