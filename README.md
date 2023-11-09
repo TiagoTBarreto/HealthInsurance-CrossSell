@@ -47,7 +47,7 @@ Construir um modelo para prever se um cliente estaria interessado no seguro auto
 | Tempo de Associação    | Número de dias que o cliente está associado à empresa.                            |
 | Resposta               | 1: O cliente está interessado, 0: O cliente não está interessado.                   |
  
-# 5. Descrição da solução
+# 4. Descrição da solução
 Foi empregado o método de gerenciamento CRIPS-DM, que tem como objetivo o desenvolvimento de projetos de Data Science de forma cíclica. Esse método é abrangente e, ao concluir um ciclo, você obterá:
 - Uma versão completa da solução.
 - Maior rapidez na entrega de valor.
@@ -56,7 +56,7 @@ Foi empregado o método de gerenciamento CRIPS-DM, que tem como objetivo o desen
 O CRIPS-DM é composto pelos seguintes passos: 
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/f4cac96f-a228-4e28-b5a2-eb16f29d5a39)
 
-# 6. Top Insights
+# 5. Top Insights
 ### H1. Clientes que tem histórico de acidentes podem ter maior interesse em adquirir o seguro de veículo. 
 **VERDADEIRO** O fator histórico de acidentes contribui significamente para o interesse do cliente.
 
@@ -98,7 +98,7 @@ Se o projeto chegasse a esse ponto e não envolvesse a parte de machine learning
 
 Essas recomendações podem ajudar a direcionar as estratégias de contato e vendas para maximizar as chances de sucesso.
 
-# 7. Machine Learning
+# 6. Machine Learning
 - KNN Classifier
 - Random Forest Classifier
 - Logistic Regression
@@ -120,7 +120,7 @@ Essas recomendações podem ajudar a direcionar as estratégias de contato e ven
 | XGBoost     | 0.424         | 0.181     | 0.254       |
 
 
-# 8. Tradução do modelo de Machine Learning
+# 7. Tradução do modelo de Machine Learning
 O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da lista, a probabilidade de eles adquirirem o seguro é alta, resultando em lucros consideráveis. No entanto, à medida que a lista é explorada mais profundamente, a propensão a adquirir o seguro diminui, o que leva a uma redução na margem de lucro devido ao custo de contato.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/7ed17bc2-fddc-463e-9e5a-fe942bf043fc)
@@ -131,16 +131,17 @@ Considerando que a empresa esteja disposta a se comunicar com possíveis interes
   
 Isso representa um lucro 2.07x maior ao usar o modelo, o que indica que a abordagem do modelo é mais eficaz em maximizar os lucros em comparação com entrar em contato com todos os clientes sem a orientação do modelo.
 
-## 8.1 Lift Curve
+## 7.1 Lift Curve
 
 Ao analisar o gráfico, é possível observar que ao entrar em contato com 20% da base de clientes usando o modelo, a empresa alcançará praticamente três vezes mais pessoas.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/cb687c78-eb56-49bb-8b95-70ab06d9e6a5)
 
-# 9. O produto final do projeto
+# 8. O produto final do projeto
 WebApp online, hospedado no Streamlit Cloud e integrado com o modelo que está no Render, está disponível para acesso em qualquer dispositivo conectado à internet, possibilitando que qualquer consumidor tenha acesso ao modelo. Você pode acessar o WebApp através do seguinte link: https://rossmann-sales-forecast.streamlit.app/
 
-![Animação](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/2aba5ee1-4e2a-4efb-94fc-0fa830f67d34)
+![20231109_104923](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/9ab6e02e-737f-4ca8-8c23-8ad973538d57)
+
 
 **A imagem acima é do WebApp, como pode se observar na barra lateral tem 3 filtros:**
 - ID Store: Este filtro controla o número das lojas para as quais a previsão será realizada.
