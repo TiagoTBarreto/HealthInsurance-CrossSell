@@ -1,3 +1,6 @@
+<div style="width: 100%;">
+
+
 # Projeto de Cross Sell de Seguro de Saúde
 
 <p align="center">
@@ -165,3 +168,6 @@ Ao embarcar em um segundo ciclo do CRISP-DM para aprimorar ainda mais este proje
 - Explorar novos modelos de Machine Learning.
 - Integração com o Excel: Levar a praticidade da predição aos usuários do Excel, integrando o sistema de predição diretamente na plataforma.
 - Formulação de Novas Hipóteses: Desenvolver e testar novas hipóteses para gerar insights adicionais para o negócio.
+
+
+</div>
