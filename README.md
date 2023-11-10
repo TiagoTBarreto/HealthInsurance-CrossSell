@@ -1,27 +1,8 @@
-<div style="width: 100%;">
-
-
 # Projeto de Cross Sell de Seguro de Saúde
 
 <p align="center">
   <img src="https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/5be72c6e-c4f0-44ce-83c0-ecec156c8c96" width="100%" height="400">
 </p>
-
-| feature              | unique | faltantes |
-|----------------------|--------|-----------|
-| id                   | 304887 | 0         |
-| gender               | 2      | 0         |
-| age                  | 66     | 0         |
-| driving_license      | 2      | 0         |
-| region_code          | 53     | 0         |
-| previously_insured   | 2      | 0         |
-| vehicle_age          | 3      | 0         |
-| vehicle_damage       | 2      | 0         |
-| annual_premium       | 46479  | 0         |
-| policy_sales_channel | 154    | 0         |
-| vintage              | 290    | 0         |
-| response             | 2      | 0         |
-
 
 # 1. Problema de Negócio
 Nosso cliente é uma seguradora que oferece Seguro Saúde aos seus clientes, agora eles precisam da construção de um modelo para prever se os segurados (clientes) do ano passado também terão interesse no Seguro Automóvel oferecido pela empresa.
@@ -172,5 +153,3 @@ Ao embarcar em um segundo ciclo do CRISP-DM para aprimorar ainda mais este proje
 - Integração com o Excel: Levar a praticidade da predição aos usuários do Excel, integrando o sistema de predição diretamente na plataforma.
 - Formulação de Novas Hipóteses: Desenvolver e testar novas hipóteses para gerar insights adicionais para o negócio.
 
-
-</div>
