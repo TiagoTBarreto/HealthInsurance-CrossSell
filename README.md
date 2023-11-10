@@ -4,13 +4,6 @@
   <img src="https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/5be72c6e-c4f0-44ce-83c0-ecec156c8c96" width="100%" height="400">
 </p>
 
-| features             | min   | max     | range  | mean          | median | std            | skew       | kurtosis   |
-|----------------------|-------|---------|--------|---------------|--------|----------------|------------|------------|
-| age                  | 20.0  | 85.0    | 65.0   | 38.826897     | 36.0   | 15.515274      | 0.671710   | -0.568526  |
-| annual_premium      | 2630.0| 540165.0| 537535.0| 30591.308311  | 31697.0| 17239.257418  | 1.721299   | 32.191697  |
-| vintage              | 10.0  | 299.0   | 289.0  | 154.392214    | 154.0  | 83.670175     | 0.002134   | -1.200642  |
-
-
 # 1. Problema de Negócio
 Nosso cliente é uma seguradora que oferece Seguro Saúde aos seus clientes, agora eles precisam da construção de um modelo para prever se os segurados (clientes) do ano passado também terão interesse no Seguro Automóvel oferecido pela empresa.
 
