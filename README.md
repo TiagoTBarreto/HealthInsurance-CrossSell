@@ -57,8 +57,8 @@ O CRIPS-DM é composto pelos seguintes passos:
 ![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/f4cac96f-a228-4e28-b5a2-eb16f29d5a39)
 
 # 5. Top Insights
-### H1. Clientes que tem histórico de acidentes podem ter maior interesse em adquirir o seguro de veículo. 
-**VERDADEIRO** O fator histórico de acidentes contribui significamente para o interesse do cliente.
+### H1. Clientes que já tiveram seu veículo danificado podem ter maior interesse em adquirir o seguro de veículo.  
+**VERDADEIRO** A ocorrência de incidentes anteriores exerce uma influência significativa no aumento do interesse pelo seguro automotivo.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/f5f9b812-1e41-4fdf-88f8-116e93aa5a25)
 
@@ -76,13 +76,10 @@ Inicialmente, pode parecer que a condição do carro é o fator determinante par
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/46bf7be0-9e9e-4735-9c90-a19bd18ebb25)
 
-### H4. O valor cobrado pode impactar no interesse do seguro de veículo.
-**VERDADEIRO** Seguros na faixa de 10000 a 20000 tem menos clientes interessados.
+### H4. Diferentes métodos de contato podem impactar o interesse na apólice.
+**VERDADEIRO** Os métodos de contato 26.0 e 124.0 apresentam a maior taxa de conversão de clientes interessados na apólice de veículo.
 
-Da mesma forma que a hipótese anterior, à primeira vista, pode parecer que o valor do seguro tem uma influência direta no interesse. No entanto, ao analisar os segundo e terceiro gráficos, torna-se evidente que as três faixas etárias com menor interesse são aquelas que têm uma grande quantidade de pessoas com idades entre 20 e 35 anos.
-
-![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/7b487e2a-a7d1-451a-96ba-1fd234b0b58c)
-
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/edb225e4-a02f-4e2a-ae2d-969f348cb07b)
 
 ### H5. Clientes que moram em regiões específicas podem ter maior interesse no seguro.
 **VERDADEIRO** Pessoas que moram na região 28 tem maior interesse no seguro.
@@ -91,13 +88,18 @@ Da mesma forma que a hipótese anterior, à primeira vista, pode parecer que o v
 
 
 ## Insights acionáveis:
-Se o projeto chegasse a esse ponto e não envolvesse a parte de machine learning, seria uma recomendação válida entrar em contato com os seguintes grupos de clientes:
-1. Aqueles com faixa etária entre 35 e 50 anos, pois demonstraram maior interesse no seguro.
-2. Clientes que relataram já ter sofrido acidentes, uma vez que essa experiência aumenta a probabilidade de interesse no seguro.
-3. Clientes que residem na região 28.
-4. Observar que a longevidade dos clientes na base não parece ter um impacto significativo no interesse pelo novo seguro.
+**Se o projeto chegasse a esse ponto e não envolvesse a parte de Machine Learning, seria uma recomendação válida entrar em contato com os seguintes grupos de clientes:**
+1. Aqueles com faixa etária entre 35 e 50 anos.
+2. Clientes residentes da região 28.
+3. Clientes que já tiveram dano em seus veículos.
+4. Clientes que não tem seguro de carro.
 
-Essas recomendações podem ajudar a direcionar as estratégias de contato e vendas para maximizar as chances de sucesso.
+**E se atentar aos seguintes pontos:**
+- Clientes com carros novos e que são jovens tem pouquíssimo interesse no seguro.
+- Priorizar os métodos de contato 26 e 124.
+- A longevidade do cliente na empresa não é um fator importante.
+
+Essas recomendações vão direcionar as estratégias de contato e vendas para maximizar as chances de sucesso.
 
 # 6. Machine Learning
 - KNN Classifier
