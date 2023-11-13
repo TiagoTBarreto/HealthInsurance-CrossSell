@@ -107,7 +107,7 @@ Essas recomendações vão direcionar as estratégias de contato e vendas para m
 - Logistic Regression
 - XGBoost Classifier
 
-**Após uma análise detalhada das métricas utilizando Cross-Validation com 5 splits, o XGBoost destacou-se como o modelo com o melhor desempenho. Diante dessa constatação, optei por avançar para a próxima fase do projeto utilizando este modelo. O valor de K=10.000 utilizado na validação representa 15% do dataset total.**
+**Após uma análise detalhada das métricas utilizando Cross-Validation com 5 splits, o XGBoost destacou-se como o modelo com o melhor desempenho. Diante dessa constatação, optei por avançar para a próxima fase do projeto utilizando este modelo. O valor de K= 9.125 utilizado na validação representa 15% do dataset total.**
 
 | Models CV            | Precision at k  | Recall at k  | F1-Score at k  |
 |----------------------|------------------|--------------|----------------|
