@@ -89,10 +89,10 @@ Inicialmente, pode parecer que a condição do carro é o fator determinante par
 
 ## Insights acionáveis:
 **Se o projeto chegasse a esse ponto e não envolvesse a parte de Machine Learning, seria uma recomendação válida entrar em contato com os seguintes grupos de clientes:**
-1. Aqueles com faixa etária entre 35 e 50 anos.
-2. Clientes residentes da região 28.
-3. Clientes que já tiveram dano em seus veículos.
-4. Clientes que não tem seguro de carro.
+1. Clientes que já tiveram dano em seus veículos.
+2. Clientes que não tem seguro de carro.
+3. Aqueles com faixa etária entre 35 e 50 anos.
+4. Clientes residentes da região 28.
 
 **E se atentar aos seguintes pontos:**
 - Clientes com carros novos e que são jovens tem pouquíssimo interesse no seguro.
@@ -117,29 +117,46 @@ Essas recomendações vão direcionar as estratégias de contato e vendas para m
 | KNN                 | 0.317       | 0.389      | 0.349       |
 
 
-**Após ajustar o modelo, foi realizado um teste simulando o ambiente de produção. Os resultados foram os seguintes:**
+**Após ajustar o modelo, foi realizado uma validação simulando o ambiente de produção. Os resultados foram os seguintes:**
 | Model       | Precision at k  | Recall at k  | F1-Score at k  |
 |-------------|------------------|--------------|----------------|
 | XGBoost     | 0.374         | 0.458     | 0.412      |
 
-**O valor de K utilizado foi de 11.430, correspondendo a 15% do dataset de teste. Observa-se que o modelo apresentou um bom poder de generalização, indicando que não ocorreu overfitting.**
+**O valor de K utilizado foi de 11.430, correspondendo a 15% do dataset de validação. Observa-se que o modelo apresentou um bom poder de generalização, indicando que não ocorreu overfitting.**
 
-# 7. Tradução do modelo de Machine Learning
-O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da lista, a probabilidade de eles adquirirem o seguro é alta, resultando em lucros consideráveis. No entanto, à medida que a lista é explorada mais profundamente, a propensão a adquirir o seguro diminui, o que leva a uma redução na margem de lucro devido ao custo de contato.
+## 6.1 Lift Curve
 
-![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/7ed17bc2-fddc-463e-9e5a-fe942bf043fc)
-
-Considerando que a empresa esteja disposta a se comunicar com possíveis interessados e obtenha um lucro bruto de R$ 600,00 para cada cliente que adquira o seguro de veículo, mas também incorra um custo de R$ 50,00 a cada vez que entra em contato com um potencial cliente, observamos o seguinte:
-- Lucro ao entrar em contato com os primeiros 33.817 clientes (44% da base): R$3.696.372,00
-- Lucro ao entrar em contato com toda a base de clientes: R$1.782.302,00
-  
-Isso representa um lucro 2.07x maior ao usar o modelo, o que indica que a abordagem do modelo é mais eficaz em maximizar os lucros em comparação com entrar em contato com todos os clientes sem a orientação do modelo.
-
-## 7.1 Lift Curve
-
-Ao analisar o gráfico, é possível observar que ao entrar em contato com 20% da base de clientes usando o modelo, a empresa alcançará praticamente três vezes mais pessoas.
+Ao analisar o gráfico, é possível observar que ao entrar em contato com 20% da base de validação usando o modelo, a empresa alcançará praticamente três vezes mais pessoas.
 
 ![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/cb687c78-eb56-49bb-8b95-70ab06d9e6a5)
+
+
+# 7. Tradução e Interpretação
+Considerando que a empresa esteja disposta a se comunicar com possíveis interessados e obtenha um lucro bruto de R$ 600,00 para cada cliente que adquira o seguro de veículo, mas também incorra um custo de R$ 50,00 a cada vez que entra em contato com um potencial cliente, podemos mensurar os seguintes planos de ação:
+
+**Plano de Ação 1 - Entrar em contato somente com pessoas que não tem seguro de veículo.**
+- Lucro ao entrar em contato com 68.595 clientes (54% da base): R$ 5.871.610,00
+- Lucro ao entrar em contato com toda a base de clientes: R$ 2.842.391,00
+
+Isso implica em um aumento de 2.06 vezes no lucro potencial se o plano for implementado em sua totalidade.
+
+**Plano de Ação 2 - Entrar em contato somente com pessoas que tiveram incidentes com seus veículos.**
+- Lucro ao entrar em contato com 63.835 clientes (50% da base): R$ 5.934.596,00
+- Lucro ao entrar em contato com toda a base de clientes: R$ 2.842.391,00
+
+Isso implica em um aumento de 2.09 vezes no lucro potencial se o plano for implementado em sua totalidade.
+
+**Plano de Ação 3 - Utilizar o Modelo de Machine Learning para ranqueamento**
+
+O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da lista, a probabilidade de eles adquirirem o seguro é alta, resultando em lucros consideráveis. No entanto, à medida que a lista é explorada mais profundamente, a propensão a adquirir o seguro diminui, o que leva a uma redução na margem de lucro devido ao custo de contato.
+
+![image](https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/d1b0f776-6601-4d19-9c8f-a8a4bbc9c3f7)
+
+- Lucro ao entrar em contato com os primeiros 55.100 clientes (43% da base): R$ 6.056.576,00
+- Lucro ao entrar em contato com toda a base de clientes: R$ 2.842.391,00
+  
+Isso implica em um aumento de 2.13 vezes no lucro potencial se o plano for implementado em sua totalidade.
+
 
 # 8. O produto final do projeto
 O produto final foi uma planilha do Google Sheets conectada com o modelo de Machine Learning em nuvem. Agora, essa planilha pode ser acessada de qualquer dispositivo compatível com o Google Sheets. 
