@@ -4,20 +4,21 @@
   <img src="https://github.com/TiagoTBarreto/HealthInsurance-CrossSell/assets/137197787/5be72c6e-c4f0-44ce-83c0-ecec156c8c96" width="100%" height="400">
 </p>
 
-| Column               | Non-Null Count | Dtype    |
-| -------------------- | -------------- | -------- |
-| id                   | 304887 non-null | int64    |
-| gender               | 304887 non-null | object   |
-| age                  | 304887 non-null | int64    |
-| driving_license      | 304887 non-null | int64    |
-| region_code          | 304887 non-null | float64  |
-| previously_insured   | 304887 non-null | int64    |
-| vehicle_age          | 304887 non-null | object   |
-| vehicle_damage       | 304887 non-null | object   |
-| annual_premium       | 304887 non-null | float64  |
-| policy_sales_channel | 304887 non-null | float64  |
-| vintage              | 304887 non-null | int64    |
-| response             | 304887 non-null | int64    |
+| Feature               | Unique | Non-Null Count | Dtype    |
+| -------------------- | ------ | -------------- | -------- |
+| id                   | 304887 | 304887 non-null | int64    |
+| gender               | 2      | 304887 non-null | object   |
+| age                  | 66     | 304887 non-null | int64    |
+| driving_license      | 2      | 304887 non-null | int64    |
+| region_code          | 53     | 304887 non-null | float64  |
+| previously_insured   | 2      | 304887 non-null | int64    |
+| vehicle_age          | 3      | 304887 non-null | object   |
+| vehicle_damage       | 2      | 304887 non-null | object   |
+| annual_premium       | 46479  | 304887 non-null | float64  |
+| policy_sales_channel | 154    | 304887 non-null | float64  |
+| vintage              | 290    | 304887 non-null | int64    |
+| response             | 2      | 304887 non-null | int64    |
+
 
 
 # 1. Problema de Negócio
