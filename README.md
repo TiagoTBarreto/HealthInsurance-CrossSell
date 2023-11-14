@@ -146,7 +146,7 @@ Isso implica em um aumento de 2.06 vezes no lucro potencial se o plano for imple
 
 Isso implica em um aumento de 2.09 vezes no lucro potencial se o plano for implementado em sua totalidade.
 
-**Plano de Ação 3 - Utilizar o Modelo de Machine Learning para ranqueamento**
+**Plano de Ação 3 - Utilizar o Modelo de Machine Learning para ranqueamento.**
 
 O gráfico abaixo ilustra que, ao entrar em contato com os primeiros clientes da lista, a probabilidade de eles adquirirem o seguro é alta, resultando em lucros consideráveis. No entanto, à medida que a lista é explorada mais profundamente, a propensão a adquirir o seguro diminui, o que leva a uma redução na margem de lucro devido ao custo de contato.
 
